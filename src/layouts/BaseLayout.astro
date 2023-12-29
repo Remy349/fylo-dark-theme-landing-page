@@ -1,5 +1,7 @@
 ---
-type Props = {
+import { Header } from '@components/header/Header'
+
+interface Props {
   title: string
 }
 
@@ -12,11 +14,17 @@ const { title } = Astro.props
     <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
     <meta name='viewport' content='width=device-width' />
     <meta name='generator' content={Astro.generator} />
+    <link rel='preconnect' href='https://fonts.googleapis.com' />
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+    <link
+      href='https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap'
+      rel='stylesheet'
+    />
     <title>{title}</title>
   </head>
-  <body>
-    <header>header</header>
-    <main>
+  <body class='font-open-sans bg-dark-blue-m text-white'>
+    <Header client:load />
+    <main class='mt-20'>
       <slot />
     </main>
     <footer>footer</footer>
