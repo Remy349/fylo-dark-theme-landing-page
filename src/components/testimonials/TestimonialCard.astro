@@ -1,0 +1,24 @@
+---
+interface Props {
+  testimonialImg: string
+  testimonialName: string
+  testimonialJob: string
+}
+
+const { testimonialName, testimonialImg, testimonialJob } = Astro.props
+---
+
+<figure class='bg-dark-blue-t rounded-lg py-8 px-6'>
+  <slot />
+  <figcaption class='flex items-center'>
+    <img
+      class='w-10 h-10 mr-2 rounded-full'
+      src={testimonialImg}
+      alt='Profile'
+    />
+    <div>
+      <p class='font-bold'>{testimonialName}</p>
+      <span class='text-xs'>{testimonialJob}</span>
+    </div>
+  </figcaption>
+</figure>

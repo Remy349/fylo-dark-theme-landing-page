@@ -1,0 +1,18 @@
+---
+interface Props {
+  serviceImg: string
+  serviceTitle: string
+}
+
+const { serviceImg, serviceTitle } = Astro.props
+---
+
+<article class='flex flex-col items-center'>
+  <img class='mb-8' src={serviceImg} alt='Service image' />
+  <div class='text-center'>
+    <h3 class='mb-2 font-raleway font-bold text-xl'>
+      {serviceTitle}
+    </h3>
+    <slot />
+  </div>
+</article>
