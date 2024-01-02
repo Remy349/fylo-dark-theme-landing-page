@@ -4,40 +4,47 @@ import TestimonialCard from './TestimonialCard.astro'
 
 <section class='mt-[4rem] mb-[2.5rem]'>
   <div class='mx-6'>
-    <div class='grid gap-y-6'>
-      <TestimonialCard
-        testimonialImg='/images/profile-1.jpg'
-        testimonialName='Satish Patel'
-        testimonialJob='Founder & CEO, Huddle'
-      >
-        <blockquote class='mb-4'>
-          Fylo has improved our team productivity by an order of magnitude.
-          Since making the switch our team has become a well-oiled collaboration
-          machine.
-        </blockquote>
-      </TestimonialCard>
-      <TestimonialCard
-        testimonialImg='/images/profile-2.jpg'
-        testimonialName='Bruce McKenzie'
-        testimonialJob='Founder & CEO, Huddle'
-      >
-        <blockquote class='mb-4'>
-          Fylo has improved our team productivity by an order of magnitude.
-          Since making the switch our team has become a well-oiled collaboration
-          machine.
-        </blockquote>
-      </TestimonialCard>
-      <TestimonialCard
-        testimonialImg='/images/profile-3.jpg'
-        testimonialName='Iva Boyd'
-        testimonialJob='Founder & CEO, Huddle'
-      >
-        <blockquote class='mb-4'>
-          Fylo has improved our team productivity by an order of magnitude.
-          Since making the switch our team has become a well-oiled collaboration
-          machine.
-        </blockquote>
-      </TestimonialCard>
+    <div class='relative'>
+      <img
+        class='w-8 absolute -top-6 left-2'
+        src='/images/bg-quotes.png'
+        alt='Quotes'
+      />
+      <div class='grid gap-y-6'>
+        <TestimonialCard
+          testimonialImg='/images/profile-1.jpg'
+          testimonialName='Satish Patel'
+          testimonialJob='Founder & CEO, Huddle'
+        >
+          <blockquote class='mb-4'>
+            Fylo has improved our team productivity by an order of magnitude.
+            Since making the switch our team has become a well-oiled
+            collaboration machine.
+          </blockquote>
+        </TestimonialCard>
+        <TestimonialCard
+          testimonialImg='/images/profile-2.jpg'
+          testimonialName='Bruce McKenzie'
+          testimonialJob='Founder & CEO, Huddle'
+        >
+          <blockquote class='mb-4'>
+            Fylo has improved our team productivity by an order of magnitude.
+            Since making the switch our team has become a well-oiled
+            collaboration machine.
+          </blockquote>
+        </TestimonialCard>
+        <TestimonialCard
+          testimonialImg='/images/profile-3.jpg'
+          testimonialName='Iva Boyd'
+          testimonialJob='Founder & CEO, Huddle'
+        >
+          <blockquote class='mb-4'>
+            Fylo has improved our team productivity by an order of magnitude.
+            Since making the switch our team has become a well-oiled
+            collaboration machine.
+          </blockquote>
+        </TestimonialCard>
+      </div>
     </div>
   </div>
 </section>
