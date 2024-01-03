@@ -3,12 +3,8 @@
   "compilerOptions": {
     "baseUrl": "/home/santiagom/Documentos/astro-web-projects/fylo-dark-theme-landing-page",
     "paths": {
-      "@components/*": [
-        "src/components/*"
-      ],
-      "@layouts/*": [
-        "src/layouts/*"
-      ]
+      "@components/*": ["src/components/*"],
+      "@layouts/*": ["src/layouts/*"]
     },
     "jsx": "react-jsx",
     "jsxImportSource": "react"

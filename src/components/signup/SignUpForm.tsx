@@ -30,7 +30,10 @@ export const SignUpForm = () => {
 
   return (
     <>
-      <form onSubmit={handleSubmit(onSubmit)} className='w-full grid gap-y-4'>
+      <form
+        onSubmit={handleSubmit(onSubmit)}
+        className='w-full grid gap-y-4 lg:grid-cols-[2fr_1fr] lg:gap-x-4 lg:items-baseline'
+      >
         <div className='flex flex-col gap-y-2'>
           <input
             className='rounded-full w-full text-dark-blue-d font-raleway font-bold outline-none py-3 pl-6'
@@ -39,7 +42,7 @@ export const SignUpForm = () => {
             autoComplete='off'
             placeholder='email@example.com'
           />
-          <span className='text-red-500 text-center'>
+          <span className='text-red-500 text-center lg:text-left'>
             {errors.email?.message}
           </span>
         </div>
